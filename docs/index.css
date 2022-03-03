@@ -164,15 +164,15 @@ footer .footer__disclaimer{
 @media (min-width:768px) {
   
   .container{
-    
+    width: 80vw;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns:  2fr 2fr ;
     grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 2fr;
-    grid-template-areas: ". .  . ."
-                         ". imagen  title ."
-                         ". imagen  information ."
-                         ". imagen  button ."
-                         ". .  . ." ;
+    grid-template-areas: " .  . "
+                         "imagen  title "
+                         "imagen  information "
+                         "imagen  button "
+                         ".  . " ;
     gap:1rem
     
   }

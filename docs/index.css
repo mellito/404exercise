@@ -124,8 +124,12 @@ html {
 
 /* -----------BACK HOME BUTTON----------*/
 /*--------------------------------------------*/
-.container a {
+.container__button{
   height: 20%;
+}
+
+.container__button button {
+  
   font-family: var(--ff--spacemono);
   font-style: normal;
   font-weight: var(--fw--bold);
@@ -134,7 +138,7 @@ html {
   letter-spacing: -0.035em;
   color: var(--clr--white);
   background-color: var(--clr--black);
-  padding: 2rem 3rem ;
+  padding: 1rem 3rem ;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -155,4 +159,41 @@ footer .footer__disclaimer{
   font-size: 1.4rem;
   line-height: 1.7rem;
   color: var(--clr--footergray);
+}
+  
+@media (min-width:768px) {
+  
+  .container{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 2fr 1.5fr 1.5fr 1.5fr 2fr;
+    grid-template-areas: ". .  . ."
+                         ". imagen  title ."
+                         ". imagen  information ."
+                         ". imagen  button ."
+                         ". .  . ." ;
+    gap:1rem
+    
+  }
+  .container__img {
+    grid-area: imagen;
+    height: 100%;
+     
+  }
+
+  .container__title {
+  grid-area: title;
+  
+
+}
+
+.container__information{
+grid-area: information;
+
+}
+
+.container__button{
+  grid-area: button;
+}
 }

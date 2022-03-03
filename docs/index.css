@@ -19,10 +19,19 @@ html {
 :root {
   /*color*/
   --clr--black: #333333;
+  --clr--white: #ffffff;
+  --clr--footergray: #bdbdbd;
   /*font*/
+
+  /*font family*/
   --ff--Inconsolata: "Inconsolata", monospace;
-  --fw--Inconsolata700: 700;
+  --ff--montserrat:font-family: 'Montserrat', sans-serif;
   --ff--spacemono: "Space Mono", monospace;
+
+    /*font weigth*/
+  --fw--bold: bold;
+  --fw--400: 400;
+  --fw--montserratbold: 700;
 }
 
 .grid {
@@ -35,30 +44,20 @@ html {
 /*--------------------------------------------*/
 /*--------------------------------------------*/
 
-/* -----------CONTAINER ----------*/
-/*--------------------------------------------*/
-
-.container {
-  height: 100vh;
-  width: 95vw;
-  margin: 0 auto;
-}
-
-/*--------------------------------------------*/
-/*--------------------------------------------*/
-
 /* -----------NAV ----------*/
 /*--------------------------------------------*/
 
 .container__nav {
-  height: 10%;
-
+  height: 10vh;
+  width: 95vw;
   align-items: center;
+  margin: 0 auto;
+  padding: 1rem;
 }
 .container__nav p {
   font-family: var(--ff--Inconsolata);
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: var(--fw--bold);
   line-height: 2.5rem;
   letter-spacing: -0.08rem;
   color: var(--clr--black);
@@ -68,11 +67,92 @@ html {
 /*--------------------------------------------*/
 /*--------------------------------------------*/
 
+/* -----------CONTAINER ----------*/
+/*--------------------------------------------*/
+
+.container {
+  height: 85vh;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
 /* -----------IMG ----------*/
 /*--------------------------------------------*/
-.container img {
+.container__img {
+  height: 30%;
   object-fit: contain;
-  height: 40%;
+  text-align: center;
+}
+
+.container__img img {
+  height: 90%;
+  max-width: 100%;
 }
 /*--------------------------------------------*/
 /*--------------------------------------------*/
+
+/* -----------TITLE----------*/
+/*--------------------------------------------*/
+.container .container__title {
+  height: 25%;
+  font-family: var(--ff--spacemono);
+  font-weight: var(--fw--bold);
+  font-size: 4.8rem;
+  line-height: 7.1rem;
+  letter-spacing: -0.035em;
+  color: var(--clr--black);
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+/* -----------INFORMATION----------*/
+/*--------------------------------------------*/
+.container__information {
+  height: 25%;
+  font-family: var(--ff--spacemono);
+  font-weight: var(--fw--400);
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  letter-spacing: -3.5%;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+/* -----------BACK HOME BUTTON----------*/
+/*--------------------------------------------*/
+.container a {
+  height: 20%;
+  font-family: var(--ff--spacemono);
+  font-style: normal;
+  font-weight: var(--fw--bold);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.035em;
+  color: var(--clr--white);
+  background-color: var(--clr--black);
+  padding: 2rem 3rem ;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+
+/* -----------FOOTER----------*/
+/*--------------------------------------------*/
+footer {
+  height: 5vh;
+  text-align: center;
+}
+footer .footer__disclaimer{
+  font-family:var(--ff--montserrat);
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--clr--footergray);
+}

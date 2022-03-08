@@ -117,7 +117,7 @@ html {
   font-weight: var(--fw--400);
   font-size: 1.8rem;
   line-height: 2.6rem;
-  letter-spacing: -3.5%;
+  letter-spacing: 3.5%;
 }
 /*--------------------------------------------*/
 /*--------------------------------------------*/
@@ -135,7 +135,7 @@ html {
   font-weight: var(--fw--bold);
   font-size: 1.4rem;
   line-height: 2.1rem;
-  letter-spacing: -0.035em;
+  letter-spacing: 0.035em;
   color: var(--clr--white);
   background-color: var(--clr--black);
   padding: 1rem 3rem ;
